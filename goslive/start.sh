@@ -53,7 +53,7 @@ function build() {
     mkdir -p images/desktop
   fi
 
-  if [[ "$1" == "-desktop" ]]; then
+  if [[ "$1" == "-d" ]]; then
     cp out/goslinux*.iso images/desktop/"$iso_normal""$append".iso
     mv out/goslinux*.iso out/goslive-desktop.iso
   fi
@@ -68,11 +68,11 @@ function build() {
 if [[ "$1" == "-h" ]]; then
   echo "-h | help message"
   echo "-s | compile iso in server mode"
-  echo "-desktop | compile iso in desktop mode "
+  echo "-d | compile iso in desktop mode"
   exit 0
 fi
 
-if [[ "$1" == "-desktop" ]]; then
+if [[ "$1" == "-d" ]]; then
   cp packages.x86_64_desktop packages.x86_64
   build "$1" "$2"
 fi
