@@ -54,13 +54,13 @@ function build() {
   fi
 
   if [[ "$1" == "-d" ]]; then
-    cp out/goslinux*.iso images/desktop/"$iso_normal""$append".iso
-    mv out/goslinux*.iso out/goslive-desktop.iso
+    cp out/gravityos*.iso images/desktop/"$iso_normal""$append".iso
+    mv out/gravityos*.iso out/gravityos-desktop.iso
   fi
 
   if [[ "$1" == "-s" ]]; then
-    cp out/goslinux*.iso images/server/"$iso_normal""$append".iso
-    mv out/goslinux*.iso out/gosserver.iso
+    cp out/gravityos*.iso images/server/"$iso_normal""$append".iso
+    mv out/graviyos*.iso out/gravityos-server.iso
   fi
 
 }
