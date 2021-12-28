@@ -3,6 +3,7 @@
 # MIT License
 # 
 # Copyright (c) 2020 Tom Meyers
+# Copyright (c) 2021 Ethan Lane <ethan@vylpes.com>
 # 
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
@@ -23,7 +24,7 @@
 # SOFTWARE.
 
 # Build the current version based on the amount of commits. It makes sure the version is always unique
-commit=$(git rev-list --count HEAD)
-version=$(cat version-edit.txt)
+commit=$(cat build.txt)
+version=$(cat version.txt)
 echo "$version"-"$commit" > airootfs/etc/version
 
