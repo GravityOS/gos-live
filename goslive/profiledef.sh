@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 # shellcheck disable=SC2034
 
-iso_name="archlinux"
-iso_label="ARCH_$(date +%Y%m)"
-iso_publisher="Arch Linux <https://archlinux.org>"
-iso_application="Arch Linux Live/Rescue CD"
+iso_name="gravityos"
+iso_label="GRAVITY_$(date +%Y%m)"
+iso_publisher="Ethan Lane <ethan@vylpes.com>"
+iso_application="GravityOS Live/Rescue CD"
 iso_version="$(date +%Y.%m.%d)"
-install_dir="arch"
+install_dir="gravity"
 buildmodes=('iso')
 bootmodes=('bios.syslinux.mbr' 'bios.syslinux.eltorito' 'uefi-x64.systemd-boot.esp' 'uefi-x64.systemd-boot.eltorito')
 arch="x86_64"
