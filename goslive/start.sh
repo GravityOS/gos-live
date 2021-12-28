@@ -27,7 +27,7 @@
 ./version_builder.sh
 version=$(cat airootfs/etc/version)
 iso_version=$(date +%Y.%m.%d)
-iso_normal=$(echo goslinux-"$iso_version"-x86_64 | tr '.' '-')
+iso_normal=$(echo gravityos-"$iso_version"-x86_64 | tr '.' '-')
 append=""
 
 function build() {
