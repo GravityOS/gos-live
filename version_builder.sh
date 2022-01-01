@@ -24,7 +24,7 @@
 # SOFTWARE.
 
 # Build the current version based on the amount of commits. It makes sure the version is always unique
-commit=$(cat build.txt)
-version=$(cat version.txt)
-echo "$version"-"$commit" > airootfs/etc/version
+build=$(cat variables/build.txt)
+version=$(cat variables/version.txt)
+echo "$version"-"$build" > gos-desktop/airootfs/etc/version
 
